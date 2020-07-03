@@ -152,7 +152,7 @@
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">QUESTION & ANSWER</span>
     </a>
 
     <!-- Sidebar -->
@@ -163,7 +163,7 @@
           <img src="{{asset('admin/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Boy Josafat Purba</a>
         </div>
       </div>
 
@@ -174,13 +174,22 @@
                with font-awesome or any other icon font library -->
           
           
-          <li class="nav-header">Daftar Menu</li>
+          <li class="nav-header">List Menu</li>
           <li class="nav-item">
             <a href="/pertanyaan" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
-              <p>Pertanyaan</p>
+              <p>Question</p>
+            </a>
+            <a href="/pertanyaan" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>Question</p>
+            </a>
+            <a href="/pertanyaan" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>Question</p>
             </a>
           </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
