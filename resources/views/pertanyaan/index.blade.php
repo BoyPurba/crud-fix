@@ -8,12 +8,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Question List</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <li class="breadcrumb-item active">Question</li>
             </ol>
           </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a href="/pertanyaan/create" class="btn btn-primary">Buat pertanyaan</a></h3>
+              <h3 class="card-title"><a href="/pertanyaan/create" class="btn btn-primary">ADD QUESTION</a></h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -35,8 +35,9 @@
             <tr>
               <th style="width: 10px">ID</th>
               <th>Isi</th>
-              <th style="width: 17%;">Tanggal</th>
-              <th style="width: 23%;">Aksi</th>
+              <th style="width: 15%;">Tanggal Dibuat</th>
+              <th style="width: 15%;">Tanggal diupdate</th>
+              <th style="width: 17%;">Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -44,11 +45,12 @@
             <tr>
               <td>{{ $p -> id }}</td>
               <td>{{ $p -> isi }}</td>
-              <td>{{ $p -> tanggal }}</td>
+              <td>{{ $p -> created_at }}</td>
+              <td>{{ $p -> updated_at }}</td>
               <td>
                 <a href="/pertanyaan/{{$p -> id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-                <a href="/pertanyaan/{{$p -> id}}/delete" class="btn btn-danger btn-sm">Hapus</a>
-                <a href="/jawaban/{{$p -> id}}" class="btn btn-primary btn-sm">Lihat Jawaban</a>
+                <a href="/pertanyaan/{{$p -> id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+                <a href="/jawaban/{{$p -> id}}" class="btn btn-primary btn-sm">View</a>
 
               </td>
             </tr>
